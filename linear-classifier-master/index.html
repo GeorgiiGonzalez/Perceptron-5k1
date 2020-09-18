@@ -3,15 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Clasificador lineal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
-    <button onclick="generate()">Generar</button>
-    <script src="js/shapes.js"></script>
-    <script src="js/dataGenerator.js"></script>
-    <script src="js/dataStructures.js"></script>
-    <script src="js/activationFunctions.js"></script>
-    <script src="js/perceptron.js"></script>
-    <script src="js/index.js"></script>
+
+    <header>
+        <nav>
+            <a href=""><img src="https://www.efundaap.com/wp-content/uploads/2020/02/UTN-FRC_logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">5k1</a></li>
+                <li><a href="">Grupo4</a></li>
+                <li><a href="">contacto</a></li>             
+            </ul>
+        </nav> 
+    </header>
+
+    <section class="splash">
+        <div class="container"> 
+            <div class="row">  
+                 <div class="col-md-8">
+                    <div class="txt">
+                        <h1>Perceptrón </h1>
+                        <h2>Utn Frc</h1>
+                        <br>
+                        <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
+                         <button  type="button" class="btn " onclick="generate()">Generar</button>
+                          <script src="js/shapes.js"></script>
+                         <script src="js/dataGenerator.js"></script>
+                         <script src="js/dataStructures.js"></script>
+                         <script src="js/activationFunctions.js"></script>                         
+                        <script src="js/perceptron.js"></script>
+                        <script src="js/index.js"></script>
+                    </div>
+                </div>                           
+             </div>
+        </div>
+        
+    </section>
+
+ 
+ <section>
+        <div class="container espacios">
+            <div class="row">
+                <div  class="col-md-6"><h3>Información</h3>
+                    <p>bla bla bla  aldmvmfksp blab alba </p></div>
+                <div  class="col-md-6">
+                    <form>
+                        
+                         <div class="form-group">
+                          <label for="exampleInputEmail1">El valor de X es: </label>
+                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                        
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleInputPassword1">El valor de Y es:</label>
+                         <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    
+   
+
+
+    
 </body>
 </html>

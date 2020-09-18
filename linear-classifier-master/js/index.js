@@ -1,6 +1,7 @@
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
 
+
 function drawData(data)
 {
     new Rectangle(0,0,500,500,"#dfedff").draw();
