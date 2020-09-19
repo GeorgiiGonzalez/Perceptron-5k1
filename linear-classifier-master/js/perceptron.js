@@ -11,6 +11,7 @@ class Perceptron
         }
         this.weights=new Vector(this.weights);
         this.learningRate=learningRate;
+        console.log(this.weights.get(0),this.weights.get(1));
     }
 
     getOutput(input)
