@@ -18,7 +18,10 @@ function drawData(data)
 let data=new DataGenerator().generate(100);
 function generate()
 {
-    data=new DataGenerator().generate(100);
+    var dg=new DataGenerator()
+    data=dg.generate(100);
+    document.getElementById('txtX').value=dg.getVerdadero();
+    document.getElementById('txtY').value=dg.getFalso();
 }
 
 
@@ -28,6 +31,8 @@ function learn()
     drawData(data);
     p.learn(data.inputs,data.outputs);
     p.draw();
+    document.getElementById('txtPrimero').value=p.getPrimero();
+    document.getElementById('txtSegundo').value=p.getSegundo();
 }
 
 
